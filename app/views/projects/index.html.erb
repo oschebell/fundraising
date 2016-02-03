@@ -1,6 +1,10 @@
 <h1><%= pluralize(@projects.size, 'Project') %></h1>
 <ul>
 <%= @projects.each do |project| %>
-  <li><%= project %></li>
+  <li><%= project.name %></li>
+  <li><%= project.description %></li>
+  <li><%= project.target_pledge_amount %></li>
+  <li><%= project.pledging_ends_on %></li>
+  <li><%= project.website %></li>
 <% end %>
 </ul>
