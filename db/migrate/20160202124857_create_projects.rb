@@ -3,9 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.string :name
       t.text :description
-      t.string :target_pledge_amount
-      t.string :decimal
-
+      t.decimal :target_pledge_amount
       t.timestamps
     end
   end
